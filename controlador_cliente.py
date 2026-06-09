@@ -10,7 +10,7 @@ DATABASE_URL = "postgresql://postgres:123@localhost:5432/lojinha"
 def cadastrar(cliente: Cliente):
 
     engine = create_engine(DATABASE_URL)
-
+    
     try:
         with engine.begin() as con:
             sql = """

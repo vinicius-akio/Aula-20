@@ -1,0 +1,1 @@
+Para instalar a programação rode no terminal pip install -r requirements.txt
