@@ -7,14 +7,14 @@ class Produto(BaseModel):
     estoque: int = Field (ge = 0)
 
     @field_validator ("nome_produto")
-    def validacao_nome (cls, nome):
+    def validacao_nome (cls, nome) -> str:
         
         nome = nome.title().strip()
 
         return nome
 
     @field_validator ("preco")
-    def validacao_preco (cls, valor):
+    def validacao_preco (cls, valor) -> float:
 
         try:
             valor = valor.replace(',', '.')
@@ -23,5 +23,5 @@ class Produto(BaseModel):
             return valor
     
         except:
-            return 'Valor do produto inválido'
+            raise ValueError('Valor do produto inválido')
         

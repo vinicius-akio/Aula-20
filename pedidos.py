@@ -16,7 +16,7 @@ class Pedidos (BaseModel):
         return data
 
     @field_validator ("status")
-    def validacao_status (cls, status):
+    def validacao_status (cls, status) -> str:
 
         status = status.title().strip()
 
