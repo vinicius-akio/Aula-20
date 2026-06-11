@@ -1,1 +1,68 @@
+# Caches e arquivos compilados
 __pycache__
+*.py[cod]
+*$py.class
+
+# Extensões em C
+*.so
+
+# Distribuição e pacotes
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ambientes Virtuais (RECOMENDADO IGNORAR)
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Arquivos de configuração pessoal / Segredos
+.env.local
+.env.*.local
+$*.env
+
+# Relatórios de testes e cobertura de código
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.poetry.lock
+
+# Logs do instalador pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Configurações do VS Code e PyCharm (Opcional, mas útil)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
